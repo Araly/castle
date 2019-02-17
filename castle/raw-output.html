@@ -622,7 +622,7 @@
     </li>
 
     <li class="firstLevel navCurrency">
-      <a href="#_" class="currency" tabindex="0">Currency:  USD </a>
+      <a href="#_" class="currency" tabindex="0">Currency:  EUR </a>
       <div class="subMenu">
         <div class="subMenuInner">
                       <ul class="subMenu-group" id="currencySelectorMainMenu"></ul>
@@ -1041,7 +1041,7 @@
                 , LatLng: {lat: 43.5258, lng: 6.9425 }
                                                             }
                         ,'217' : {
-                name : "Bas Rupts et Chalet Fleuri"
+                name : "Bas Rupts"
                 , type : 'hotel'
                 , LatLng: {lat: 48.0451, lng: 6.866 }
                                                             }
@@ -1051,7 +1051,7 @@
                 , LatLng: {lat: 44.8936, lng: -0.1565 }
                                                             }
                         ,'228' : {
-                name : "Domaine de la Bretesche &amp; Spa"
+                name : "Domaine de la Bretesche Golf &amp; Spa"
                 , type : 'hotel'
                 , LatLng: {lat: 47.4807, lng: -2.1711 }
                                                             }
@@ -1845,13 +1845,13 @@
     <ul class="langSelector"></ul>
 </div>        <div class="currencySelector mdSelect">
     <span class="currencyLabel">Currency:</span>
-            <span class="btn btnSmall btnLower btnShuttle btnLight">USD</span>
+            <span class="btn btnSmall btnLower btnShuttle btnLight">EUR</span>
                 <ul class="currencySelector">
-                                            <li class="currencyElem" onclick="switchCurrency('EUR');return false;" data-currency="eur">
+                                            <li class="currencyElem active" onclick="switchCurrency('EUR');return false;" data-currency="eur">
                 <img class="flag flag-eu" src="/images/common/blank.png?s-40.0.0" />
                 <span>EUR (€) Euro</span>
             </li>
-                                            <li class="currencyElem active" onclick="switchCurrency('USD');return false;" data-currency="usd">
+                                            <li class="currencyElem" onclick="switchCurrency('USD');return false;" data-currency="usd">
                 <img class="flag flag-us" src="/images/common/blank.png?s-40.0.0" />
                 <span>USD (US$) US Dollar</span>
             </li>
@@ -1883,10 +1883,6 @@
                 <img class="flag flag-ae" src="/images/common/blank.png?s-40.0.0" />
                 <span>AED</span>
             </li>
-                                            <li class="currencyElem" onclick="switchCurrency('AFA');return false;" data-currency="afa">
-                <img class="flag flag-af" src="/images/common/blank.png?s-40.0.0" />
-                <span>AFA</span>
-            </li>
                                             <li class="currencyElem" onclick="switchCurrency('ALL');return false;" data-currency="all">
                 <img class="flag flag-al" src="/images/common/blank.png?s-40.0.0" />
                 <span>ALL</span>
@@ -1899,29 +1895,13 @@
                 <img class="flag flag-an" src="/images/common/blank.png?s-40.0.0" />
                 <span>ANG</span>
             </li>
-                                            <li class="currencyElem" onclick="switchCurrency('AON');return false;" data-currency="aon">
-                <img class="flag flag-ao" src="/images/common/blank.png?s-40.0.0" />
-                <span>AON</span>
-            </li>
                                             <li class="currencyElem" onclick="switchCurrency('ARS');return false;" data-currency="ars">
                 <img class="flag flag-ar" src="/images/common/blank.png?s-40.0.0" />
                 <span>ARS</span>
             </li>
-                                            <li class="currencyElem" onclick="switchCurrency('ATS');return false;" data-currency="ats">
-                <img class="flag flag-at" src="/images/common/blank.png?s-40.0.0" />
-                <span>ATS</span>
-            </li>
                                             <li class="currencyElem" onclick="switchCurrency('AWG');return false;" data-currency="awg">
                 <img class="flag flag-aw" src="/images/common/blank.png?s-40.0.0" />
                 <span>AWG</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('AZM');return false;" data-currency="azm">
-                <img class="flag flag-az" src="/images/common/blank.png?s-40.0.0" />
-                <span>AZM</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('BAK');return false;" data-currency="bak">
-                <img class="flag flag-ba" src="/images/common/blank.png?s-40.0.0" />
-                <span>BAK</span>
             </li>
                                             <li class="currencyElem" onclick="switchCurrency('BBD');return false;" data-currency="bbd">
                 <img class="flag flag-bb" src="/images/common/blank.png?s-40.0.0" />
@@ -1930,14 +1910,6 @@
                                             <li class="currencyElem" onclick="switchCurrency('BDT');return false;" data-currency="bdt">
                 <img class="flag flag-bd" src="/images/common/blank.png?s-40.0.0" />
                 <span>BDT</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('BEF');return false;" data-currency="bef">
-                <img class="flag flag-be" src="/images/common/blank.png?s-40.0.0" />
-                <span>BEF</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('BGL');return false;" data-currency="bgl">
-                <img class="flag flag-bg" src="/images/common/blank.png?s-40.0.0" />
-                <span>BGL</span>
             </li>
                                             <li class="currencyElem" onclick="switchCurrency('BHD');return false;" data-currency="bhd">
                 <img class="flag flag-bh" src="/images/common/blank.png?s-40.0.0" />
@@ -1967,17 +1939,9 @@
                 <img class="flag flag-bs" src="/images/common/blank.png?s-40.0.0" />
                 <span>BSD</span>
             </li>
-                                            <li class="currencyElem" onclick="switchCurrency('BTR');return false;" data-currency="btr">
-                <img class="flag flag-bt" src="/images/common/blank.png?s-40.0.0" />
-                <span>BTR</span>
-            </li>
                                             <li class="currencyElem" onclick="switchCurrency('BWP');return false;" data-currency="bwp">
                 <img class="flag flag-bw" src="/images/common/blank.png?s-40.0.0" />
                 <span>BWP</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('BYR');return false;" data-currency="byr">
-                <img class="flag flag-by" src="/images/common/blank.png?s-40.0.0" />
-                <span>BYR</span>
             </li>
                                             <li class="currencyElem" onclick="switchCurrency('BZD');return false;" data-currency="bzd">
                 <img class="flag flag-bz" src="/images/common/blank.png?s-40.0.0" />
@@ -2007,17 +1971,9 @@
                 <img class="flag flag-cv" src="/images/common/blank.png?s-40.0.0" />
                 <span>CVE</span>
             </li>
-                                            <li class="currencyElem" onclick="switchCurrency('CYP');return false;" data-currency="cyp">
-                <img class="flag flag-cy" src="/images/common/blank.png?s-40.0.0" />
-                <span>CYP</span>
-            </li>
                                             <li class="currencyElem" onclick="switchCurrency('CZK');return false;" data-currency="czk">
                 <img class="flag flag-cz" src="/images/common/blank.png?s-40.0.0" />
                 <span>CZK</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('DEM');return false;" data-currency="dem">
-                <img class="flag flag-de" src="/images/common/blank.png?s-40.0.0" />
-                <span>DEM</span>
             </li>
                                             <li class="currencyElem" onclick="switchCurrency('DJF');return false;" data-currency="djf">
                 <img class="flag flag-dj" src="/images/common/blank.png?s-40.0.0" />
@@ -2035,14 +1991,6 @@
                 <img class="flag flag-dz" src="/images/common/blank.png?s-40.0.0" />
                 <span>DZD</span>
             </li>
-                                            <li class="currencyElem" onclick="switchCurrency('ECS');return false;" data-currency="ecs">
-                <img class="flag flag-ec" src="/images/common/blank.png?s-40.0.0" />
-                <span>ECS</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('EEK');return false;" data-currency="eek">
-                <img class="flag flag-ee" src="/images/common/blank.png?s-40.0.0" />
-                <span>EEK</span>
-            </li>
                                             <li class="currencyElem" onclick="switchCurrency('EGP');return false;" data-currency="egp">
                 <img class="flag flag-eg" src="/images/common/blank.png?s-40.0.0" />
                 <span>EGP</span>
@@ -2051,17 +1999,9 @@
                 <img class="flag flag-er" src="/images/common/blank.png?s-40.0.0" />
                 <span>ERN</span>
             </li>
-                                            <li class="currencyElem" onclick="switchCurrency('ESP');return false;" data-currency="esp">
-                <img class="flag flag-es" src="/images/common/blank.png?s-40.0.0" />
-                <span>ESP</span>
-            </li>
                                             <li class="currencyElem" onclick="switchCurrency('ETB');return false;" data-currency="etb">
                 <img class="flag flag-et" src="/images/common/blank.png?s-40.0.0" />
                 <span>ETB</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('FIM');return false;" data-currency="fim">
-                <img class="flag flag-fi" src="/images/common/blank.png?s-40.0.0" />
-                <span>FIM</span>
             </li>
                                             <li class="currencyElem" onclick="switchCurrency('FJD');return false;" data-currency="fjd">
                 <img class="flag flag-fj" src="/images/common/blank.png?s-40.0.0" />
@@ -2075,10 +2015,6 @@
                 <img class="flag flag-ge" src="/images/common/blank.png?s-40.0.0" />
                 <span>GEL</span>
             </li>
-                                            <li class="currencyElem" onclick="switchCurrency('GHC');return false;" data-currency="ghc">
-                <img class="flag flag-gh" src="/images/common/blank.png?s-40.0.0" />
-                <span>GHC</span>
-            </li>
                                             <li class="currencyElem" onclick="switchCurrency('GIP');return false;" data-currency="gip">
                 <img class="flag flag-gi" src="/images/common/blank.png?s-40.0.0" />
                 <span>GIP</span>
@@ -2090,10 +2026,6 @@
                                             <li class="currencyElem" onclick="switchCurrency('GNF');return false;" data-currency="gnf">
                 <img class="flag flag-gn" src="/images/common/blank.png?s-40.0.0" />
                 <span>GNF</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('GRD');return false;" data-currency="grd">
-                <img class="flag flag-gr" src="/images/common/blank.png?s-40.0.0" />
-                <span>GRD</span>
             </li>
                                             <li class="currencyElem" onclick="switchCurrency('GTQ');return false;" data-currency="gtq">
                 <img class="flag flag-gt" src="/images/common/blank.png?s-40.0.0" />
@@ -2127,10 +2059,6 @@
                 <img class="flag flag-id" src="/images/common/blank.png?s-40.0.0" />
                 <span>IDR</span>
             </li>
-                                            <li class="currencyElem" onclick="switchCurrency('IEP');return false;" data-currency="iep">
-                <img class="flag flag-ie" src="/images/common/blank.png?s-40.0.0" />
-                <span>IEP</span>
-            </li>
                                             <li class="currencyElem" onclick="switchCurrency('ILS');return false;" data-currency="ils">
                 <img class="flag flag-il" src="/images/common/blank.png?s-40.0.0" />
                 <span>ILS</span>
@@ -2150,10 +2078,6 @@
                                             <li class="currencyElem" onclick="switchCurrency('ISK');return false;" data-currency="isk">
                 <img class="flag flag-is" src="/images/common/blank.png?s-40.0.0" />
                 <span>ISK</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('ITL');return false;" data-currency="itl">
-                <img class="flag flag-it" src="/images/common/blank.png?s-40.0.0" />
-                <span>ITL</span>
             </li>
                                             <li class="currencyElem" onclick="switchCurrency('JMD');return false;" data-currency="jmd">
                 <img class="flag flag-jm" src="/images/common/blank.png?s-40.0.0" />
@@ -2219,18 +2143,6 @@
                 <img class="flag flag-ls" src="/images/common/blank.png?s-40.0.0" />
                 <span>LSL</span>
             </li>
-                                            <li class="currencyElem" onclick="switchCurrency('LTL');return false;" data-currency="ltl">
-                <img class="flag flag-lt" src="/images/common/blank.png?s-40.0.0" />
-                <span>LTL</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('LUF');return false;" data-currency="luf">
-                <img class="flag flag-lu" src="/images/common/blank.png?s-40.0.0" />
-                <span>LUF</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('LVL');return false;" data-currency="lvl">
-                <img class="flag flag-lv" src="/images/common/blank.png?s-40.0.0" />
-                <span>LVL</span>
-            </li>
                                             <li class="currencyElem" onclick="switchCurrency('LYD');return false;" data-currency="lyd">
                 <img class="flag flag-ly" src="/images/common/blank.png?s-40.0.0" />
                 <span>LYD</span>
@@ -2242,10 +2154,6 @@
                                             <li class="currencyElem" onclick="switchCurrency('MDL');return false;" data-currency="mdl">
                 <img class="flag flag-md" src="/images/common/blank.png?s-40.0.0" />
                 <span>MDL</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('MGF');return false;" data-currency="mgf">
-                <img class="flag flag-mg" src="/images/common/blank.png?s-40.0.0" />
-                <span>MGF</span>
             </li>
                                             <li class="currencyElem" onclick="switchCurrency('MKD');return false;" data-currency="mkd">
                 <img class="flag flag-mk" src="/images/common/blank.png?s-40.0.0" />
@@ -2267,14 +2175,6 @@
                 <img class="flag flag-mo" src="/images/common/blank.png?s-40.0.0" />
                 <span>MOP</span>
             </li>
-                                            <li class="currencyElem" onclick="switchCurrency('MRO');return false;" data-currency="mro">
-                <img class="flag flag-mr" src="/images/common/blank.png?s-40.0.0" />
-                <span>MRO</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('MTL');return false;" data-currency="mtl">
-                <img class="flag flag-mt" src="/images/common/blank.png?s-40.0.0" />
-                <span>MTL</span>
-            </li>
                                             <li class="currencyElem" onclick="switchCurrency('MUR');return false;" data-currency="mur">
                 <img class="flag flag-mu" src="/images/common/blank.png?s-40.0.0" />
                 <span>MUR</span>
@@ -2295,10 +2195,6 @@
                 <img class="flag flag-my" src="/images/common/blank.png?s-40.0.0" />
                 <span>MYR</span>
             </li>
-                                            <li class="currencyElem" onclick="switchCurrency('MZM');return false;" data-currency="mzm">
-                <img class="flag flag-mz" src="/images/common/blank.png?s-40.0.0" />
-                <span>MZM</span>
-            </li>
                                             <li class="currencyElem" onclick="switchCurrency('NAD');return false;" data-currency="nad">
                 <img class="flag flag-na" src="/images/common/blank.png?s-40.0.0" />
                 <span>NAD</span>
@@ -2314,10 +2210,6 @@
                                             <li class="currencyElem" onclick="switchCurrency('NIO');return false;" data-currency="nio">
                 <img class="flag flag-ni" src="/images/common/blank.png?s-40.0.0" />
                 <span>NIO</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('NLG');return false;" data-currency="nlg">
-                <img class="flag flag-nl" src="/images/common/blank.png?s-40.0.0" />
-                <span>NLG</span>
             </li>
                                             <li class="currencyElem" onclick="switchCurrency('NOK');return false;" data-currency="nok">
                 <img class="flag flag-no" src="/images/common/blank.png?s-40.0.0" />
@@ -2355,10 +2247,6 @@
                 <img class="flag flag-pl" src="/images/common/blank.png?s-40.0.0" />
                 <span>PLN</span>
             </li>
-                                            <li class="currencyElem" onclick="switchCurrency('PTE');return false;" data-currency="pte">
-                <img class="flag flag-pt" src="/images/common/blank.png?s-40.0.0" />
-                <span>PTE</span>
-            </li>
                                             <li class="currencyElem" onclick="switchCurrency('PYG');return false;" data-currency="pyg">
                 <img class="flag flag-py" src="/images/common/blank.png?s-40.0.0" />
                 <span>PYG</span>
@@ -2366,10 +2254,6 @@
                                             <li class="currencyElem" onclick="switchCurrency('QAR');return false;" data-currency="qar">
                 <img class="flag flag-qa" src="/images/common/blank.png?s-40.0.0" />
                 <span>QAR</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('ROL');return false;" data-currency="rol">
-                <img class="flag flag-ro" src="/images/common/blank.png?s-40.0.0" />
-                <span>ROL</span>
             </li>
                                             <li class="currencyElem" onclick="switchCurrency('RON');return false;" data-currency="ron">
                 <img class="flag flag-ro" src="/images/common/blank.png?s-40.0.0" />
@@ -2391,17 +2275,9 @@
                 <img class="flag flag-sb" src="/images/common/blank.png?s-40.0.0" />
                 <span>SBD</span>
             </li>
-                                            <li class="currencyElem" onclick="switchCurrency('SBL');return false;" data-currency="sbl">
-                <img class="flag flag-sb" src="/images/common/blank.png?s-40.0.0" />
-                <span>SBL</span>
-            </li>
                                             <li class="currencyElem" onclick="switchCurrency('SCR');return false;" data-currency="scr">
                 <img class="flag flag-sc" src="/images/common/blank.png?s-40.0.0" />
                 <span>SCR</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('SDD');return false;" data-currency="sdd">
-                <img class="flag flag-sd" src="/images/common/blank.png?s-40.0.0" />
-                <span>SDD</span>
             </li>
                                             <li class="currencyElem" onclick="switchCurrency('SEK');return false;" data-currency="sek">
                 <img class="flag flag-se" src="/images/common/blank.png?s-40.0.0" />
@@ -2415,14 +2291,6 @@
                 <img class="flag flag-sh" src="/images/common/blank.png?s-40.0.0" />
                 <span>SHP</span>
             </li>
-                                            <li class="currencyElem" onclick="switchCurrency('SIT');return false;" data-currency="sit">
-                <img class="flag flag-si" src="/images/common/blank.png?s-40.0.0" />
-                <span>SIT</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('SKK');return false;" data-currency="skk">
-                <img class="flag flag-sk" src="/images/common/blank.png?s-40.0.0" />
-                <span>SKK</span>
-            </li>
                                             <li class="currencyElem" onclick="switchCurrency('SLL');return false;" data-currency="sll">
                 <img class="flag flag-sl" src="/images/common/blank.png?s-40.0.0" />
                 <span>SLL</span>
@@ -2430,14 +2298,6 @@
                                             <li class="currencyElem" onclick="switchCurrency('SOS');return false;" data-currency="sos">
                 <img class="flag flag-so" src="/images/common/blank.png?s-40.0.0" />
                 <span>SOS</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('SRG');return false;" data-currency="srg">
-                <img class="flag flag-sr" src="/images/common/blank.png?s-40.0.0" />
-                <span>SRG</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('STD');return false;" data-currency="std">
-                <img class="flag flag-st" src="/images/common/blank.png?s-40.0.0" />
-                <span>STD</span>
             </li>
                                             <li class="currencyElem" onclick="switchCurrency('SVC');return false;" data-currency="svc">
                 <img class="flag flag-sv" src="/images/common/blank.png?s-40.0.0" />
@@ -2455,14 +2315,6 @@
                 <img class="flag flag-th" src="/images/common/blank.png?s-40.0.0" />
                 <span>THB</span>
             </li>
-                                            <li class="currencyElem" onclick="switchCurrency('TJR');return false;" data-currency="tjr">
-                <img class="flag flag-tj" src="/images/common/blank.png?s-40.0.0" />
-                <span>TJR</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('TMM');return false;" data-currency="tmm">
-                <img class="flag flag-tm" src="/images/common/blank.png?s-40.0.0" />
-                <span>TMM</span>
-            </li>
                                             <li class="currencyElem" onclick="switchCurrency('TND');return false;" data-currency="tnd">
                 <img class="flag flag-tn" src="/images/common/blank.png?s-40.0.0" />
                 <span>TND</span>
@@ -2470,10 +2322,6 @@
                                             <li class="currencyElem" onclick="switchCurrency('TOP');return false;" data-currency="top">
                 <img class="flag flag-to" src="/images/common/blank.png?s-40.0.0" />
                 <span>TOP</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('TRL');return false;" data-currency="trl">
-                <img class="flag flag-tr" src="/images/common/blank.png?s-40.0.0" />
-                <span>TRL</span>
             </li>
                                             <li class="currencyElem" onclick="switchCurrency('TTD');return false;" data-currency="ttd">
                 <img class="flag flag-tt" src="/images/common/blank.png?s-40.0.0" />
@@ -2503,10 +2351,6 @@
                 <img class="flag flag-uz" src="/images/common/blank.png?s-40.0.0" />
                 <span>UZS</span>
             </li>
-                                            <li class="currencyElem" onclick="switchCurrency('VEB');return false;" data-currency="veb">
-                <img class="flag flag-ve" src="/images/common/blank.png?s-40.0.0" />
-                <span>VEB</span>
-            </li>
                                             <li class="currencyElem" onclick="switchCurrency('VND');return false;" data-currency="vnd">
                 <img class="flag flag-vn" src="/images/common/blank.png?s-40.0.0" />
                 <span>VND</span>
@@ -2523,14 +2367,6 @@
                 <img class="flag flag-xa" src="/images/common/blank.png?s-40.0.0" />
                 <span>XAF</span>
             </li>
-                                            <li class="currencyElem" onclick="switchCurrency('XAG');return false;" data-currency="xag">
-                <img class="flag flag-xa" src="/images/common/blank.png?s-40.0.0" />
-                <span>XAG</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('XAU');return false;" data-currency="xau">
-                <img class="flag flag-xa" src="/images/common/blank.png?s-40.0.0" />
-                <span>XAU</span>
-            </li>
                                             <li class="currencyElem" onclick="switchCurrency('XCD');return false;" data-currency="xcd">
                 <img class="flag flag-xc" src="/images/common/blank.png?s-40.0.0" />
                 <span>XCD</span>
@@ -2543,25 +2379,13 @@
                 <img class="flag flag-xo" src="/images/common/blank.png?s-40.0.0" />
                 <span>XOF</span>
             </li>
-                                            <li class="currencyElem" onclick="switchCurrency('XPD');return false;" data-currency="xpd">
-                <img class="flag flag-xp" src="/images/common/blank.png?s-40.0.0" />
-                <span>XPD</span>
-            </li>
                                             <li class="currencyElem" onclick="switchCurrency('XPF');return false;" data-currency="xpf">
                 <img class="flag flag-xp" src="/images/common/blank.png?s-40.0.0" />
                 <span>XPF</span>
             </li>
-                                            <li class="currencyElem" onclick="switchCurrency('XPT');return false;" data-currency="xpt">
-                <img class="flag flag-xp" src="/images/common/blank.png?s-40.0.0" />
-                <span>XPT</span>
-            </li>
                                             <li class="currencyElem" onclick="switchCurrency('YER');return false;" data-currency="yer">
                 <img class="flag flag-ye" src="/images/common/blank.png?s-40.0.0" />
                 <span>YER</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('YUN');return false;" data-currency="yun">
-                <img class="flag flag-yu" src="/images/common/blank.png?s-40.0.0" />
-                <span>YUN</span>
             </li>
                                             <li class="currencyElem" onclick="switchCurrency('ZAR');return false;" data-currency="zar">
                 <img class="flag flag-za" src="/images/common/blank.png?s-40.0.0" />
@@ -2574,10 +2398,6 @@
                                             <li class="currencyElem" onclick="switchCurrency('ZMW');return false;" data-currency="zmw">
                 <img class="flag flag-zm" src="/images/common/blank.png?s-40.0.0" />
                 <span>ZMW</span>
-            </li>
-                                            <li class="currencyElem" onclick="switchCurrency('ZRN');return false;" data-currency="zrn">
-                <img class="flag flag-zr" src="/images/common/blank.png?s-40.0.0" />
-                <span>ZRN</span>
             </li>
                                             <li class="currencyElem" onclick="switchCurrency('ZWD');return false;" data-currency="zwd">
                 <img class="flag flag-zw" src="/images/common/blank.png?s-40.0.0" />
