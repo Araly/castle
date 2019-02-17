@@ -33,3 +33,7 @@ So we have in /fetch all hotel/restaurants of france.
 We want only the hotels of it, and the name of the restaurant associated to it, which is not necessarily the same.
 Then we will compare that name to the michelin scraping to be done, where the names aren't necessarily quite the same either.
 From that, we will only keep only the ones having a macaron in the michelin database
+
+After trying various things, I came to a conclusion that readline can't be stopped, so I have to kill the server to be able to continue. It's quite horrible but hey, need to advance.
+
+So I save my stuff to a file, quietly turn around my thinking server, and butcher it with a rusty cleaver, and restart it again, telling him "oh look I found a file that *someone certainly not you in a previous life* created, how convenient"
