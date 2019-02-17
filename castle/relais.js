@@ -120,7 +120,7 @@ async function processHTMLLineByLineWithForLoop() {
             console.log(`h3 line: ${line}`);
             console.log(restaurants);
             var toWrite = JSON.stringify(restaurants);
-            fs.writeFile("./etablissements.json", toWrite, 'utf8', function (err) {
+            fs.writeFile("./relais-etablissements.json", toWrite, 'utf8', function (err) {
                 if (err) {
                     console.log("An error occured while writing JSON Object to File.");
                     return console.log(err);

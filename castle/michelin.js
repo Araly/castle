@@ -55,7 +55,7 @@ async function processHTMLLineByLineWithForLoop(filePath) {
             console.log(`end: ${line}`);
             console.log(restaurants);
             var toWrite = JSON.stringify(restaurants);
-            fs.appendFile("./michelin/etablissements.json", toWrite, 'utf8', function (err) {
+            fs.appendFile("./michelin-etablissements.json", toWrite, 'utf8', function (err) {
                 if (err) {
                     console.log("An error occured while writing JSON Object to File.");
                     return console.log(err);
