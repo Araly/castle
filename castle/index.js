@@ -19,6 +19,10 @@ app.get('/michelin', function(req, res) {
     michelinProcess();
 });
 
+app.get('/compare', function(req, res) {
+    res.send('later');
+});
+
 app.get('/', (req, res) =>
         res.send('go to /relais or /michelin'));
 
