@@ -1,3 +1,4 @@
+var readline = require('readline');
 var fetchUrl = require('fetch').fetchUrl;
 var fs = require('fs');
 var path = require('path');
@@ -36,37 +37,25 @@ async function processHTMLLineByLineWithForLoop(filePath) {
     for await (const line of rl) {
         if (reading == 0 && line.includes('poi_card-display-title')) {
             reading = 1;
-            console.log('found title');
         }
         else if (reading == 1) {
             lastRestaurant = line.slice(10, -14);
             restaurants[lastRestaurant] = {};
             reading = 2;
+            console.log(`title: ${lastRestaurant}`);
         }
-        else if (reading == 1 && !(line.includes('h3') || line.includes('<') || line.includes(';'))) {
-            console.log(`restaurant line: ${line.slice(44)}`);
-            if (!line.includes('    Chef - ') && !line.includes('    Maître de maison - ')) {
-                lastRestaurant = line.slice(44);
-                restaurants[lastRestaurant] = {};
-            }
-            /*
-            else if (line.includes('    Chef - ')) {
-                restaurants[lastRestaurant].chef = line.slice(55);
-                console.log(restaurants[lastRestaurant]);
-                console.log(restaurants);
-            }
-            else if (line.includes('    Maître de maison - ')) {
-                restaurants[lastRestaurant].maitre = line.slice(67);
-                console.log(restaurants[lastRestaurant]);
-            }
-            */
+        else if (reading == 2 && line.includes('poi_card-display-price')) {
+            reading = 3;
         }
-        else if (reading == 1 && line.includes('h3')) {
-            reading = 2;
-            console.log(`h3 line: ${line}`);
+        else if (reading == 3) {
+            restaurants[lastRestaurant].price = line.slice(16, -20);
+            reading = 0;
+        }
+        else if (line.includes('</html>')) {
+            console.log(`end: ${line}`);
             console.log(restaurants);
             var toWrite = JSON.stringify(restaurants);
-            fs.writeFile("./etablissements.json", toWrite, 'utf8', function (err) {
+            fs.appendFile("./michelin/etablissements.json", toWrite, 'utf8', function (err) {
                 if (err) {
                     console.log("An error occured while writing JSON Object to File.");
                     return console.log(err);
@@ -86,7 +75,7 @@ module.exports.process = async function process() {
         }
         files.forEach(function (file) {
             console.log(file);
-
+            processHTMLLineByLineWithForLoop(`./michelin/${file}`);
         });
     });
 }
