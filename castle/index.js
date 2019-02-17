@@ -1,20 +1,26 @@
 let express = require('express');
 let app = express();
+
 let relais = require('./relais.js');
+let relaisScrap = relais.scrap;
+let relaisProcess = relais.process;
 
-let scrap = relais.scrap;
-let process = relais.process;
+let michelin = require('./michelin.js');
+let michelinScrap = michelin.scrap;
+let michelinProcess = michelin.process;
 
-app.get('/scrap', function(req, res) {
-    scrap();
+app.get('/relais', function(req, res) {
+    relaisScrap();
+    relaisProcess();
 });
 
-app.get('/process', function(req, res) {
-    process();
+app.get('/michelin', function(req, res) {
+    michelinScrap();
+    michelinProcess();
 });
 
 app.get('/', (req, res) =>
-        res.send('hello world'));
+        res.send('go to /relais or /michelin'));
 
 app.listen('8081');
 
